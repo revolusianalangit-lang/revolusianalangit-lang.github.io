@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebijakan Privasi - Amel Dress | Revolusi Anak Langit</title>
+  <meta name="description" content="Kebijakan Privasi resmi aplikasi Amel Dress oleh Revolusi Anak Langit. Permainan anak yang 100% aman, bebas iklan, dan tanpa pengumpulan data pribadi.">
+  <link rel="icon" type="image/png" href="icon.png">
+
+  <!-- Google Fonts: Patrick Hand (Doodle), Fredoka (Playful Rounded), Nunito (Readable Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-cream: #FFFDF9;
+      --ink: #2C3539;
+      --ink-light: #5A6578;
+      --card-bg: #FFFFFF;
+      --primary-pink: #FF6B8B;
+      --pastel-pink: #FFEBF0;
+      --primary-teal: #2EC4B6;
+      --pastel-teal: #E6FAF8;
+      --primary-yellow: #FFD166;
+      --pastel-yellow: #FFF8E7;
+      --primary-purple: #9D4EDD;
+      --pastel-purple: #F3E8FF;
+      --border-sketch: 2.5px solid var(--ink);
+      --shadow-doodle: 4px 5px 0px var(--ink);
+      --radius-doodle: 255px 15px 225px 15px/15px 225px 15px 255px;
+      --radius-card: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--ink);
+      line-height: 1.7;
+      position: relative;
+      overflow-x: hidden;
+      /* Grid notebook paper doodle background */
+      background-image: 
+        radial-gradient(#E2D9CC 1px, transparent 1px),
+        radial-gradient(#E2D9CC 1px, #FFFDF9 1px);
+      background-size: 24px 24px;
+      background-position: 0 0, 12px 12px;
+      min-height: 100vh;
+      padding: 24px 16px;
+    }
+
+    /* Doodle hand-drawn decorative SVGs */
+    .doodle-deco {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.85;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header Section */
+    .header-card {
+      background: #FFFFFF;
+      border: var(--border-sketch);
+      border-radius: var(--radius-doodle);
+      box-shadow: var(--shadow-doodle);
+      padding: 36px 28px;
+      text-align: center;
+      margin-bottom: 28px;
+      position: relative;
+      background-color: #FFFFFF;
+    }
+
+    /* Washi Tape Accent */
+    .washi-tape {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-1.5deg);
+      background: rgba(255, 209, 102, 0.85);
+      border: 1.5px dashed rgba(44, 53, 57, 0.4);
+      padding: 4px 40px;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: var(--ink);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    }
+
+    .app-icon {
+      width: 108px;
+      height: 108px;
+      border-radius: 26px;
+      border: var(--border-sketch);
+      box-shadow: 3px 4px 0px var(--ink);
+      margin: 12px auto 16px;
+      display: block;
+      transition: transform 0.2s ease;
+      background-color: #fff;
+    }
+
+    .app-icon:hover {
+      transform: rotate(-3deg) scale(1.05);
+    }
+
+    h1 {
+      font-family: 'Fredoka', cursive;
+      font-size: 2.3rem;
+      color: var(--primary-pink);
+      text-shadow: 2px 2px 0px #FFEBF0;
+      margin-bottom: 6px;
+    }
+
+    .org-tagline {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 1.45rem;
+      color: var(--ink-light);
+      margin-bottom: 18px;
+    }
+
+    .org-tagline strong {
+      color: var(--primary-purple);
+      text-decoration: underline wavy var(--primary-teal);
+    }
+
+    /* Highlights Grid */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .badge-item {
+      background: var(--pastel-pink);
+      border: 2px solid var(--ink);
+      border-radius: 16px;
+      padding: 14px 10px;
+      text-align: center;
+      box-shadow: 2px 3px 0px var(--ink);
+      transition: transform 0.15s ease;
+    }
+
+    .badge-item:nth-child(2) { background: var(--pastel-teal); }
+    .badge-item:nth-child(3) { background: var(--pastel-yellow); }
+    .badge-item:nth-child(4) { background: var(--pastel-purple); }
+
+    .badge-item:hover {
+      transform: translateY(-2px);
+    }
+
+    .badge-icon {
+      font-size: 26px;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    .badge-text {
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+
+    /* Content Cards */
+    .content-card {
+      background: var(--card-bg);
+      border: var(--border-sketch);
+      border-radius: 20px;
+      box-shadow: var(--shadow-doodle);
+      padding: 28px 24px;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .content-card::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      right: 32px;
+      width: 50px;
+      height: 16px;
+      background: rgba(46, 196, 182, 0.45);
+      border: 1px dashed rgba(44, 53, 57, 0.3);
+      transform: rotate(2deg);
+    }
+
+    .card-title {
+      font-family: 'Fredoka', cursive;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      color: var(--ink);
+      border-bottom: 2px dashed #E2D9CC;
+      padding-bottom: 8px;
+    }
+
+    .card-title .icon-doodle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--pastel-yellow);
+      border: 2px solid var(--ink);
+      border-radius: 50%;
+      font-size: 18px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 1.02rem;
+      color: #374151;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 12px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    li::before {
+      content: "✏️";
+      position: absolute;
+      left: 0;
+      top: 1px;
+      font-size: 14px;
+    }
+
+    .highlight-box {
+      background: #FDF8F0;
+      border: 2px dashed #D69E2E;
+      border-radius: 14px;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      color: #744210;
+    }
+
+    /* Contact Box */
+    .contact-card {
+      background: #FFF9F2;
+      border: var(--border-sketch);
+      border-radius: var(--radius-doodle);
+      box-shadow: var(--shadow-doodle);
+      padding: 30px 24px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-card h2 {
+      font-family: 'Fredoka', cursive;
+      font-size: 1.6rem;
+      color: var(--primary-pink);
+      margin-bottom: 8px;
+    }
+
+    .contact-email-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--primary-teal);
+      color: #FFFFFF;
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 600;
+      font-size: 1.15rem;
+      padding: 12px 28px;
+      border: 2px solid var(--ink);
+      border-radius: 30px;
+      box-shadow: 3px 4px 0px var(--ink);
+      text-decoration: none;
+      margin-top: 12px;
+      transition: all 0.15s ease;
+    }
+
+    .contact-email-btn:hover {
+      background: #25A99D;
+      transform: translateY(-2px);
+      box-shadow: 4px 6px 0px var(--ink);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 24px 12px;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 1.25rem;
+      color: var(--ink-light);
+    }
+
+    footer .heart {
+      color: #FF477E;
+      display: inline-block;
+      animation: beat 1.2s infinite ease-in-out;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.25); }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.85rem; }
+      .org-tagline { font-size: 1.2rem; }
+      .header-card { padding: 26px 18px; }
+      .content-card { padding: 20px 16px; }
+      .highlights-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Sketch Doodles Background -->
+  <svg class="doodle-deco" style="top: 40px; left: 20px; width: 64px; height: 64px;" viewBox="0 0 100 100">
+    <path d="M50 15 L53 38 L76 41 L55 55 L61 78 L43 63 L23 74 L32 52 L14 36 L37 36 Z" fill="#FFE66D" stroke="#2C3539" stroke-width="4" stroke-linejoin="round"/>
+  </svg>
+  <svg class="doodle-deco" style="top: 160px; right: 25px; width: 56px; height: 56px;" viewBox="0 0 100 100">
+    <path d="M50 20 C65 2, 95 18, 85 45 C75 70, 50 88, 50 88 C50 88, 25 70, 15 45 C5 18, 35 2, 50 20 Z" fill="#FF85A1" stroke="#2C3539" stroke-width="4"/>
+  </svg>
+  <svg class="doodle-deco" style="top: 720px; left: 15px; width: 50px; height: 50px;" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="35" fill="#E6FAF8" stroke="#2C3539" stroke-width="4" stroke-dasharray="6,4"/>
+    <circle cx="50" cy="50" r="14" fill="#2EC4B6"/>
+  </svg>
+  <svg class="doodle-deco" style="top: 1200px; right: 20px; width: 60px; height: 60px;" viewBox="0 0 100 100">
+    <path d="M20 70 L50 25 L80 70 Z" fill="#F3E8FF" stroke="#2C3539" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="50" cy="25" r="7" fill="#FFD166" stroke="#2C3539" stroke-width="3"/>
+  </svg>
+
+  <div class="container">
+    
+    <!-- Header Card -->
+    <header class="header-card">
+      <div class="washi-tape">★ AMEL DRESS PRIVACY POLICY ★</div>
+      <img src="icon.png" alt="Amel Dress Icon" class="app-icon">
+      <h1>Kebijakan Privasi</h1>
+      <p class="org-tagline">
+        Permainan <strong>Amel Dress</strong> oleh Organisasi <strong>Revolusi Anak Langit</strong>
+      </p>
+
+      <p style="max-width: 680px; margin: 0 auto; color: #4B5563;">
+        Organisasi <strong>Revolusi Anak Langit</strong> berkomitmen penuh untuk menjaga privasi, kenyamanan, dan keselamatan anak-anak serta seluruh keluarga yang memainkan game <strong>Amel Dress</strong>. Aplikasi ini dibuat sebagai sarana edukasi kreatif berpakaian yang aman tanpa kekhawatiran privasi.
+      </p>
+
+      <!-- Highlights Doodle Badges -->
+      <div class="highlights-grid">
+        <div class="badge-item">
+          <span class="badge-icon">🧸</span>
+          <span class="badge-text">100% Ramah Anak</span>
+        </div>
+        <div class="badge-item">
+          <span class="badge-icon">🚫</span>
+          <span class="badge-text">Bebas Iklan</span>
+        </div>
+        <div class="badge-item">
+          <span class="badge-icon">🔒</span>
+          <span class="badge-text">Tanpa Lacak Data</span>
+        </div>
+        <div class="badge-item">
+          <span class="badge-icon">✨</span>
+          <span class="badge-text">100% Gratis</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section 1 -->
+    <section class="content-card">
+      <h2 class="card-title">
+        <span class="icon-doodle">1</span>
+        Tidak Ada Pengumpulan Data Pribadi
+      </h2>
+      <p>
+        <strong>Amel Dress sama sekali TIDAK mengumpulkan, menyimpan, mentransmisikan, maupun membagikan data pribadi pengguna.</strong>
+      </p>
+      <ul>
+        <li><strong>Tanpa Registrasi / Login:</strong> Anak dan orang tua dapat langsung memainkan game tanpa harus membuat akun, login, atau memasukkan identitas apa pun.</li>
+        <li><strong>Tanpa Data Identitas:</strong> Kami tidak meminta maupun mengumpulkan nama, tanggal lahir, nomor telepon, alamat fisik, kontak, atau email anak.</li>
+        <li><strong>Tanpa Akses Media & Lokasi:</strong> Aplikasi tidak mengakses kamera, mikrofon, galeri foto, maupun lokasi GPS perangkat.</li>
+        <li><strong>Tanpa Pelacak Perangkat:</strong> Tidak ada pengumpulan Advertising ID (AAID), ID perangkat keras, atau fingerprinting sistem.</li>
+      </ul>
+      <div class="highlight-box">
+        💡 <strong>Kerahasiaan Mutlak:</strong> Seluruh interaksi ganti baju dan kreasi kostum hanya diproses secara lokal di dalam memori perangkat Anda.
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="content-card">
+      <h2 class="card-title">
+        <span class="icon-doodle">2</span>
+        Bebas Iklan & Bebas Pembelian
+      </h2>
+      <p>
+        Kami ingin anak-anak berimajinasi dan berkarya secara tenang tanpa distraksi maupun risiko finansial yang tidak diinginkan:
+      </p>
+      <ul>
+        <li><strong>Bebas Iklan Pihak Ketiga:</strong> Amel Dress tidak memuat banner, video intervensi, pop-up, atau jaringan periklanan apa pun.</li>
+        <li><strong>Semua Kostum Terbuka Gratis:</strong> Tidak ada sistem pembelian dalam aplikasi (<em>In-App Purchases</em> / IAP). Seluruh gaun, baju, sepatu, dan aksesoris dapat digunakan sepuasnya secara gratis.</li>
+        <li><strong>Tidak Ada Data Finansial:</strong> Tidak ada transaksi kartu kredit, rekening bank, maupun dompet digital.</li>
+      </ul>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="content-card">
+      <h2 class="card-title">
+        <span class="icon-doodle">3</span>
+        Kepatuhan Standar Perlindungan Anak (COPPA & Google Play Families)
+      </h2>
+      <p>
+        Aplikasi Amel Dress dirancang secara khusus untuk memenuhi regulasi perlindungan anak tingkat internasional dan panduan ketat Google Play:
+      </p>
+      <ul>
+        <li><strong>Kepatuhan COPPA:</strong> Sepenuhnya mematuhi <em>Children's Online Privacy Protection Act</em> (COPPA) dengan tidak mengumpulkan data pribadi dari anak-anak di bawah usia 13 tahun.</li>
+        <li><strong>Kebijakan Keluarga Google Play:</strong> Dirancang sesuai dengan <em>Google Play Families Policy</em> untuk menjamin konten ramah keluarga yang aman dan mendidik.</li>
+        <li><strong>Gerbang Orang Tua (Parental Gate):</strong> Fitur sensitif seperti pengaturan batas waktu bermain (<em>Timer</em>) dilindungi oleh soal matematika sederhana atau verifikasi yang ditujukan untuk orang tua atau wali.</li>
+      </ul>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="content-card">
+      <h2 class="card-title">
+        <span class="icon-doodle">4</span>
+        Izin Akses Perangkat (Device Permissions)
+      </h2>
+      <p>
+        Amel Dress dibuat seringan dan sebersih mungkin. Game ini tidak memerlukan izin runtime yang berisiko pada perangkat Android Anda:
+      </p>
+      <ul>
+        <li>Tidak memerlukan izin <code>READ_EXTERNAL_STORAGE</code> / <code>WRITE_EXTERNAL_STORAGE</code> untuk data pengguna.</li>
+        <li>Tidak memerlukan izin <code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>.</li>
+        <li>Tidak memerlukan izin <code>CAMERA</code>, <code>RECORD_AUDIO</code>, atau <code>READ_CONTACTS</code>.</li>
+        <li>Game dapat dimainkan secara utuh dan lancar dalam mode luring (<em>offline</em> / tanpa koneksi internet).</li>
+      </ul>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="content-card">
+      <h2 class="card-title">
+        <span class="icon-doodle">5</span>
+        Penyimpanan Data Lokal
+      </h2>
+      <p>
+        Pengaturan preferensi permainan (seperti konfigurasi timer batas waktu atau status suara musik) disimpan secara internal di ruang isolasi lokal perangkat (<em>sandbox</em>).
+      </p>
+      <p>
+        Data lokal ini tidak pernah dikirimkan ke server kami atau pihak mana pun, dan akan otomatis terhapus jika aplikasi dicopot pemasangannya (<em>uninstall</em>).
+      </p>
+    </section>
+
+    <!-- Section 6: Official Contact -->
+    <section class="contact-card">
+      <h2>Punya Pertanyaan atau Masukan? 💌</h2>
+      <p style="max-width: 600px; margin: 0 auto 16px; color: #4B5563;">
+        Kami sangat terbuka untuk mendengar saran dari orang tua dan komunitas demi kenyamanan dan keamanan bermain anak-anak.
+      </p>
+      <div style="font-size: 1.1rem; margin-bottom: 8px;">
+        <strong>Organisasi Pengembang:</strong> Revolusi Anak Langit
+      </div>
+      <div style="font-size: 1.05rem; margin-bottom: 16px; color: #5A6578;">
+        ID Paket Aplikasi: <code>com.ral.ameldress</code>
+      </div>
+      <a href="mailto:revolusianalangit@gmail.com" class="contact-email-btn">
+        <span>✉️</span> revolusianalangit@gmail.com
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Dibuat dengan <span class="heart">❤️</span> untuk anak-anak Indonesia oleh <strong>Revolusi Anak Langit</strong>
+      </p>
+      <p style="font-size: 0.95rem; margin-top: 6px; opacity: 0.75;">
+        © Revolusi Anak Langit. Seluruh Hak Cipta Dilindungi.
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
